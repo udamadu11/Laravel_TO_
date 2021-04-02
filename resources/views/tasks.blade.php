@@ -10,7 +10,7 @@
             </div>
             <div class="panel-body">
                 <!-- validation display-->
-                @include(common.errors)
+               
                  <!-- new task form-->
                  <form action="{{ url('task') }} " method="POST" class="form-horizon">
                     {{ csrf_field() }}
@@ -18,7 +18,7 @@
                     <div class='form-group'>
                         <label for="task-name" class="col-sm-3 control-label">Task</label>
                         <div class="col-sm-6">
-                            <input type="text" name="name" id="task name" class="form-control" value="{{ old('task')}"/>
+                            <input type="text" name="name" id="task name" class="form-control" value="{{ old('task')}}"/>
                         </div>
                     </div>
                     <div class='form-group'>
@@ -53,7 +53,7 @@
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
                                 <button type="submit" class="btn btn-danger">
-                                <i class="fa fa-btn fa-trash"> Add Task
+                                <i class="fa fa-btn fa-trash"> Delete
                             </button>
                                 </form>
                             </td>
